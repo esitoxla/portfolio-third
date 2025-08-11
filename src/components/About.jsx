@@ -4,22 +4,21 @@ import mine3 from "../assets/images/mine3.jpeg";
 
 export default function About() {
   return (
-    <div className="px-8 flex gap-6">
+    <div className="px-8 flex gap-8 justify-around items-center">
       <div className="w-1/2 flex flex-col gap-8">
         <div className="text-5xl font-medium">ABOUT MYSELF</div>
 
         <p className="text-gray-500">
-          inappropriate behavior is often laughed off as “boys will be boys,”
-          women face higher conduct standards especially in the workplace.
-          That’s why it’s crucial that, as women, our behavior on the job is
-          beyond reproach. inappropriate behavior is often laughed.
+          I am a passionate individual with a background in biology. I
+          transitioned into tech by training in web development at MEST. This
+          experience has allowed me to combine my scientific knowledge with
+          technology to create innovative solutions.
         </p>
 
         <p className="text-gray-500">
-          That’s why it’s crucial that, as women, our behavior on the job is
-          beyond reproach. inappropriate behavior is often laughed.
-          inappropriate behavior is often laughed off as “boys will be boys,”
-          women face higher conduct standards especially in the workplace.
+          Driven by curiosity, I create user-focused applications that merge
+          science and technology. With a commitment to continuous learning, I
+          strive to contribute to impactful projects.
         </p>
 
         <p className="border rounded bg-gradient-to-r from-[#6C63FF] to-[#3FE7E8] text-white w-[25%] px-4 py-2">

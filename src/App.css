@@ -4,9 +4,4 @@ body{
   font-family: "Montserrat", "poppins", sans-serif;
 }
 
-.bg-image {
-  background-image: url('/assets/images/hero.png');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+
