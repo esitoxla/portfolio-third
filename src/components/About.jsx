@@ -4,7 +4,7 @@ import mine3 from "../assets/images/mine3.jpeg";
 
 export default function About() {
   return (
-    <div className="px-8 flex gap-8 justify-around items-center">
+    <div className="px-8 flex gap-8 justify-around items-center mt-[5rem]">
       <div className="w-1/2 flex flex-col gap-8">
         <div className="text-5xl font-medium">ABOUT MYSELF</div>
 

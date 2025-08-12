@@ -25,10 +25,10 @@ export default function Hero() {
           <h3 className="text-6xl font-bold">IRENE TOXLA</h3>
           <p className="font-medium text-2xl">WEB DEVELOPER</p>
           <p className="text-gray-600">
-            You will begin to realise why this exercise is called the Dickens
-            Pattern (with reference to the ghost showing Scrooge some different
-            futures) Pattern (with reference to the ghost showing Scrooge some
-            different futures). Get a text to replace this
+            I build intuitive, purposeful digital experiences that solve
+            real-world problems. Blending creativity with technical skill, I
+            focus on delivering solutions that engage users, drive results, and
+            bring innovative ideas to life.
           </p>
         </div>
 
