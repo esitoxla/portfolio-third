@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div>Copyright © 2025 IRENE ESINAM TOXLA | All rights reserved.</div>
+      <div className="text-center px-2">Copyright © 2025 IRENE ESINAM TOXLA | All rights reserved.</div>
     </div>
   );
 }

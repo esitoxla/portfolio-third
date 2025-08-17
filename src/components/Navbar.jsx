@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/images/logo.png"
 import { NavLink, useLocation } from "react-router";
-import { label } from "framer-motion/client";
+import { FaTimes } from "react-icons/fa";
+import { MdMenu } from "react-icons/md";
 
 
 export default function Navbar() {
 
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
+    const [open, setOpen] = useState(false);
   
   useEffect(() => {
      const handleScroll = () => {
@@ -32,7 +34,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full px-14 py-2 z-50 transition-colors duration-50 ${
+      className={`fixed top-0 left-0 w-full md:px-14 px-4 py-2 z-50 transition-colors duration-50 ${
         location.pathname !== "/" || scrolled ? "bg-black" : "bg-transparent"
       }`}
     >
@@ -47,7 +49,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <ul className="flex gap-6 items-center cursor-pointer font-medium pr-6">
             {navLinks.map((link) => (
               <li key={link.label}>
@@ -64,6 +66,15 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* hamburgar */}
+        <div className="md:hidden px-4" onClick={() => setOpen(!open)}>
+          {open ? (
+            <FaTimes className="text-2xl" />
+          ) : (
+            <MdMenu className="text-4xl" />
+          )}
         </div>
       </div>
     </nav>

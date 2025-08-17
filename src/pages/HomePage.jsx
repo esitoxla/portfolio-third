@@ -10,19 +10,19 @@ export default function HomePage() {
     <div>
       <Home />
 
-      <div className="my-[10rem]">
+      <div className="md:my-[10rem] my-[13rem]">
         <Background />
       </div>
 
-      <div className="absolute top-[126rem] left-0 right-0">
+      <div className="absolute top-[120rem] md:top-[126rem] left-0 right-0">
         <Services />
       </div>
 
-      <div className='absolute top-[160rem] w-full'>
+      <div className='absolute top-[180rem] md:top-[160rem] w-full'>
         <Contact/>
       </div>
 
-      <div className="absolute top-[196rem] w-full">
+      <div className="absolute top-[234rem] md:top-[199rem] w-full">
         <Footer />
       </div>
     </div>

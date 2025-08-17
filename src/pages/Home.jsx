@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="px-10 h-screen bg-cover bg-center relative"
+        className=" md:px-10 h-screen bg-cover bg-center relative"
         style={{ backgroundImage: `url(${heroImg})` }}
       >
         <Hero />

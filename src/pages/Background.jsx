@@ -5,7 +5,6 @@ import Education from "../components/Education";
 import About from "../components/About";
 import heroImg from "../assets/images/hero.png";
 
-
 export default function Background() {
   const [activeTab, setActiveTab] = useState("experience");
 
@@ -16,18 +15,12 @@ export default function Background() {
           <About />
         </div>
         <div
-          className=" bg-cover bg-center w-full absolute my-8"
+          className=" bg-cover bg-center w-full absolute my-8 "
           style={{ backgroundImage: `url(${heroImg})` }}
         >
-          <div className="flex flex-col justify-center">
-            <div>
-              <BackgroundTabs activeTab={activeTab} changeTab={setActiveTab} />
-            </div>
-
-            <div>
-              {activeTab === "experience" ? <Experience /> : <Education />}
-            </div>
-          </div>
+          <BackgroundTabs activeTab={activeTab} changeTab={setActiveTab} />
+          
+          {activeTab === "experience" ? <Experience /> : <Education />}
         </div>
       </div>
     </>
