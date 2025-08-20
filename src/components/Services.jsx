@@ -26,7 +26,7 @@ export default function Services() {
     },
   ];
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-8 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-center my-8 sm:my-12">
           OFFERINGS TO MY CLIENTS

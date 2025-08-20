@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.png"
 import { NavLink, useLocation } from "react-router";
 import { FaTimes } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 export default function Navbar() {
@@ -28,7 +29,6 @@ export default function Navbar() {
     { label: "ABOUT", path: "about" },
     { label: "SERVICES", path: "services" },
     { label: "PROJECTS", path: "projects" },
-    {label: "TESTIMONIALS", path: "testimonial"},
     { label: "CONTACT", path: "contact" },
   ];
 
@@ -77,6 +77,45 @@ export default function Navbar() {
           )}
         </div>
       </div>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -100, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -100, scale: 0.95 }}
+            transition={{
+              type: "spring",
+              stiffness: 120, // controls how "bouncy" it feels
+              damping: 12, // controls how much it settles
+            }}
+            className="absolute top-20 left-0 w-full h-screen z-20 md:hidden"
+          >
+            <div className="flex flex-col gap-8 px-8 text-xl font-semibold uppercase bg-gradient-to-r from-[#6C63FF] to-[#3FE7E8]  text-white py-5 m-6 rounded-3xl">
+              <ul className="flex flex-col gap-6 font-medium  cursor-pointer">
+                <NavLink to="/" onClick={() => setOpen(false)}>
+                  <li>HOME</li>
+                </NavLink>
+
+                <NavLink to="about" onClick={() => setOpen(false)}>
+                  <li>ABOUT</li>
+                </NavLink>
+
+                <NavLink to="services" onClick={() => setOpen(false)}>
+                  <li>SERVICES</li>
+                </NavLink>
+
+                <NavLink to="projects" onClick={() => setOpen(false)}>
+                  <li>PROJECTS</li>
+                </NavLink>
+
+                <NavLink to="contact" onClick={() => setOpen(false)}>
+                  <li>CONTACT</li>
+                </NavLink>
+              </ul>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

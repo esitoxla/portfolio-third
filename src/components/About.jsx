@@ -1,10 +1,11 @@
 import React from "react";
 import mine2 from "../assets/images/mine2.jpeg";
 import mine3 from "../assets/images/mine3.jpeg";
+import { NavLink } from "react-router";
 
 export default function About() {
   return (
-    <div className="px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-10 lg:gap-8 justify-around items-center mt-[3rem] lg:mt-[5rem]">
+    <div className="px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-10 lg:gap-8 justify-around items-center mt-[5rem] lg:mt-[5rem]">
       {/* Left side */}
       <div className="w-full lg:w-1/2 flex flex-col gap-6 sm:gap-8">
         <div className="text-3xl sm:text-4xl lg:text-5xl font-medium text-center lg:text-left">
@@ -24,11 +25,11 @@ export default function About() {
           strive to contribute to impactful projects.
         </p>
 
-        <a href="/IRENE.RESUME.pdf" target="_blank" rel="noopener noreferrer">
+        <NavLink to="contact">
           <p className="border rounded bg-gradient-to-r from-[#6C63FF] to-[#3FE7E8] text-white w-fit sm:w-[50%] lg:w-[25%] text-center px-4 py-2 cursor-pointer">
-            DOWNLOAD CV
+            GET IN TOUCH
           </p>
-        </a>
+        </NavLink>
       </div>
 
       {/* Right side (image) */}

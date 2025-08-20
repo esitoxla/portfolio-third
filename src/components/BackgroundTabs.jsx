@@ -7,7 +7,7 @@ const tabItems = [
 
 export default function BackgroundTabs({ activeTab, changeTab }) {
   return (
-    <div className="lg:w-[30%] mx-auto flex items-center justify-center gap-3 my-8 py-8 ">
+    <div className="w-[80rem] mx-auto flex items-center justify-center gap-3 my-8 py-8 ">
       {tabItems.map((tab) => (
         <button
           key={tab.key}

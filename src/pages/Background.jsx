@@ -11,17 +11,7 @@ export default function Background() {
   return (
     <>
       <div className="container">
-        <div>
-          <About />
-        </div>
-        <div
-          className=" bg-cover bg-center w-full absolute my-8 "
-          style={{ backgroundImage: `url(${heroImg})` }}
-        >
-          <BackgroundTabs activeTab={activeTab} changeTab={setActiveTab} />
-          
-          {activeTab === "experience" ? <Experience /> : <Education />}
-        </div>
+        <About />
       </div>
     </>
   );
