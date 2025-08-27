@@ -1,9 +1,10 @@
-import React from 'react'
-import Home from './Home'
-import Background from './Background'
-import Services from '../components/Services'
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import React from "react";
+import Home from "./Home";
+import Background from "./Background";
+import Services from "../components/Services";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Projects from "./Projects";
 
 export default function HomePage() {
   return (
@@ -14,17 +15,10 @@ export default function HomePage() {
         <Background />
       </div>
 
-      <div className="">
-        <Services />
-      </div>
-
-      <div className=''>
-        <Contact/>
-      </div>
-
-      <div className="">
-        <Footer />
-      </div>
+      <Services />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

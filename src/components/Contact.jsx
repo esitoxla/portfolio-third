@@ -21,7 +21,7 @@ export default function Contact() {
       </div>
 
       {/* Right (Form) */}
-      <div className="flex flex-col gap-1 md:gap-2 md:ml-[2rem] lg:ml-[5rem]">
+      <div className="flex flex-col gap-1 md:gap-2 ">
         <h3 className="text-2xl sm:text-3xl lg:text-4xl text-[#4831D4] font-medium text-center md:text-left">
           Send me a message!
         </h3>

@@ -2,10 +2,17 @@ import React from "react";
 import mine2 from "../assets/images/mine2.jpeg";
 import mine3 from "../assets/images/mine3.jpeg";
 import { NavLink } from "react-router";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-10 lg:gap-8 justify-around items-center mt-[5rem] lg:mt-[5rem]">
+    <motion.div
+      className="px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-10 lg:gap-8 justify-around items-center mt-[5rem] lg:mt-[5rem]"
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       {/* Left side */}
       <div className="w-full lg:w-1/2 flex flex-col gap-6 sm:gap-8">
         <div className="text-3xl sm:text-4xl lg:text-5xl font-medium text-center lg:text-left">
@@ -26,9 +33,13 @@ export default function About() {
         </p>
 
         <NavLink to="contact">
-          <p className="border rounded bg-gradient-to-r from-[#6C63FF] to-[#3FE7E8] text-white w-fit sm:w-[50%] lg:w-[25%] text-center px-4 py-2 cursor-pointer">
+          <motion.p
+            className="border rounded bg-gradient-to-r from-[#6C63FF] to-[#3FE7E8] text-white w-fit sm:w-[50%] lg:w-[25%] text-center px-4 py-2 cursor-pointer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             GET IN TOUCH
-          </p>
+          </motion.p>
         </NavLink>
       </div>
 
@@ -40,6 +51,6 @@ export default function About() {
           className="w-[80%] h-[70%] rounded-[50%_60%_30%_60%_/_50%_60%_40%_60%] object-cover"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
