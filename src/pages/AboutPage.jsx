@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div>
       <Background />
 
-      <div className='absolute top-[84rem] w-full'>
+      <div className='mt-6' >
         <Footer />
       </div>
     </div>

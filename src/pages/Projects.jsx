@@ -6,12 +6,17 @@ import projectsData from "../Data/projectData"
 import heroImg from "../assets/images/hero.png"
 
 export default function Projects() {
+    //keeps track of which category is selected (default "all").
   const [filter, setFilter] = useState("all")
+
+  //keeps track of what the user typed in the search bar.
   const [searchTerm, setSearchTerm] = useState("")
 
   // Apply filter + search together
   const filteredProjects = projectsData.filter((p) => {
     const matchesCategory = filter === "all" || p.category === filter
+
+    //with this search is case insensitive, filter through title and description to see if it contains serach term
     const matchesSearch =
       p.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       p.description.toLowerCase().includes(searchTerm.toLowerCase())
