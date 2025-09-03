@@ -2,12 +2,11 @@ import React from 'react'
 import { RouterProvider } from 'react-router'
 import { createBrowserRouter } from 'react-router'
 import RootLayout from './pages/RootLayout';
-import Background from './pages/Background';
 import HomePage from './pages/HomePage';
 import ServicePage from './pages/ServicePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
-import Projects from './pages/Projects';
+import ProjectPage from './pages/ProjectPage';
 
 export default function App() {
   const router = createBrowserRouter([
@@ -29,7 +28,7 @@ export default function App() {
         },
         {
           path: "projects",
-          Component: Projects,
+          Component: ProjectPage,
         },
         {
           path: "contact",

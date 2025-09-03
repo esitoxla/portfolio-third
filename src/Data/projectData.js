@@ -3,6 +3,7 @@ import todoImg from "../assets/images/todo-app.png";
 import CocohuskImg from "../assets/images/cocohusk.png";
 import minanaImg from "../assets/images/minanaImg.1.png"
 import QrCodeImg from "../assets/images/QrCode.png"
+import insectImg from "../assets/images/insect.api.png";
 
 
 const projectsData = [
@@ -46,8 +47,8 @@ const projectsData = [
     title: "Insects-borne Diseases API",
     category: "api-development",
     description: "RESTful API that shares data on insect-transmitted diseases.",
-    image: textImg,
-    link: "https://esitoxla.github.io/todo-div/",
+    image: insectImg,
+    link: "https://documenter.getpostman.com/view/38771481/2sB3HjNMuw",
   },
   {
     id: 6,
