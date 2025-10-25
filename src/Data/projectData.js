@@ -34,14 +34,14 @@ const projectsData = [
     image: minanaImg,
     link: "https://minana-services-ltd.netlify.app/",
   },
-  {
-    id: 4,
-    title: "Qr Code Generator App",
-    category: "react-apps",
-    description: "A habit-tracking application with daily goals and analytics.",
-    image: QrCodeImg,
-    link: "https://esitoxla.github.io/todo-div/",
-  },
+  // {
+  //   id: 4,
+  //   title: "Qr Code Generator App",
+  //   category: "react-apps",
+  //   description: "A habit-tracking application with daily goals and analytics.",
+  //   image: QrCodeImg,
+  //   link: "https://esitoxla.github.io/todo-div/",
+  // },
   {
     id: 5,
     title: "Insects-borne Diseases API",
@@ -50,14 +50,14 @@ const projectsData = [
     image: insectImg,
     link: "https://documenter.getpostman.com/view/38771481/2sB3HjNMuw",
   },
-  {
-    id: 6,
-    title: "Qr Code Generator API",
-    category: "api-development",
-    description: "RESTful API to track and analyze drug efficacy reports",
-    image: textImg,
-    link: "https://esitoxla.github.io/todo-div/",
-  },
+  // {
+  //   id: 6,
+  //   title: "Qr Code Generator API",
+  //   category: "api-development",
+  //   description: "RESTful API to track and analyze drug efficacy reports",
+  //   image: textImg,
+  //   link: "https://esitoxla.github.io/todo-div/",
+  // },
 ];
 
 export default projectsData;
